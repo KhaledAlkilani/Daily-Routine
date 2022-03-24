@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.container {
+  background-color: rgba(222, 184, 135, 0.37);
+  width: 40%;
+  min-height: 100vh;
+  box-shadow: 0px 0px 20px 0px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.vlactive {
+  display: none;
+}
+
+.container h1 {
+  padding: 1.5rem;
+}
+
+.tablecon {
+  background-color: white;
+  max-width: 90%;
+  box-shadow: 0px 0px 5px 0px white;
+  border-radius: 10px;
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 990px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .container h1 {
+    text-align: center;
+    font-size: 27px;
+  }
+}
+
+@media all and (max-width: 340px) {
+  .tablecon {
+    margin: 10px;
+  }
+  .container h1 {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 0.5rem;
+  }
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+table {
+  border: none;
+  border-spacing: 10px;
+}
+
+@media all and (max-width: 600px) {
+  table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 340px) {
+  table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+th {
+  font-size: 19px;
+}
+
+.vlcontainer {
+  background-color: rgba(222, 184, 135, 0.37);
+  width: 38%;
+  min-height: 100vh;
+  box-shadow: 0px 0px 20px 0px gray;
+  display: none;
+  border-radius: 10px;
+  /* margin: 0 auto; */
+  position: fixed;
+  top: 0px;
+  left: 30%;
+  padding: 20px;
+}
+
+.vlactive {
+  display: block;
+  /* opacity: 1; */
+}
+
+.vlh {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 1.8rem;
+}
+
+.vltablecon {
+  background-color: white;
+  max-width: 90%;
+  box-shadow: 0px 0px 5px 0px white;
+  border-radius: 10px;
+  margin: 0 auto;
+}
